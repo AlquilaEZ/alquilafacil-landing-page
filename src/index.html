@@ -29,12 +29,17 @@
           <li
             class="transition px-3 hidden lg:block hover:text-[#fa5151]"
           >
-            <a href="#discover" class="cursor-pointer">DESCUBRIR</a>
+            <a href="#discover" class="cursor-pointer">ESPACIOS</a>
           </li>
+          <li
+          class="transition px-3 hidden lg:block hover:text-[#fa5151]"
+        >
+          <a href="#publish" class="cursor-pointer">PUBLICAR</a>
+        </li>
           <li
             class="transition px-3 hidden lg:block hover:text-[#fa5151]"
           >
-            <a href="#publish" class="cursor-pointer">PUBLICAR</a>
+            <a href="#monitoring" class="cursor-pointer">MONITOREO</a>
           </li>
           <li
             class="transition px-3  hidden lg:block hover:text-[#fa5151]"
@@ -49,7 +54,7 @@
         </ul>
       </div>
     </nav>
-    <aside data-aos="fade-left" data-aos-duration="800" class="bg-amber-500 fixed flex flex-col items-center justify-center h-auto px-4 py-6 gap-4 z-50 right-0 top-1/2 shadow-lg rounded-l-lg">
+    <aside data-aos="fade-left" data-aos-duration="800" class="bg-amber-500 fixed flex flex-col items-center justify-center h-auto px-4 py-6 gap-4 z-50 right-0 top-1/3 shadow-lg rounded-l-lg">
       <a
         href="https://www.facebook.com/profile.php?id=61566546191657"
         class="hover:text-gray-200"
@@ -84,27 +89,23 @@
     <main class="pt-[10dvh]">
       <section class="relative hero w-full min-h-[90dvh] flex justify-center items-center">
         <img data-aos="fade-right" src="./assets/search-phonet.png" alt="phone" class="absolute bottom-0 left-0 w-[22%]" />
+        
+        <!-- CAMBIO: left-0 → right-0 -->
+        <img data-aos="fade-left" src="./assets/computer.png" alt="computer" class="absolute bottom-0 right-0 w-[25%]" />
+        
         <div class="self-center justify-center items-center text-center flex flex-col gap-10">
-          <h1 class="text-6xl lg:text-8xl font-bold text-white"><span class="logo-span text-[#D13333]">Alquila</span>Fácil</h1>
-          <p class="text-3xl lg:text-5xl text-white text-balance w-[60%] font-light">El espacio ideal para tus eventos, al alcance de tus manos</p>
-          <div class="flex flex-col md:flex-row gap-4 md:gap-10 justify-center">
-            <a href="https://www.apple.com/app-store/" target="_blank" class="download-button">
-              <img
-                src="https://porcentaje.org/apps/consiguelo-en-el-app-store.png"
-                alt="App Store"
-                class="h-16 max-w-60 transition rounded-md"
-              />
-            </a>
-            <a href="https://play.google.com/store" target="_blank" class="download-button">
-              <img
-                src="https://vivecudillero.com/wp-content/uploads/2019/11/google-play-blanco.png"
-                alt="Google Play Store"
-                class="h-16 max-w-60 transition rounded-sm"
-              />
-            </a>
-          </div>
-        </div> 
+          <h1 class="text-6xl lg:text-8xl font-bold text-white">
+            <span class="logo-span text-[#D13333]">Alquila</span>Fácil
+          </h1>
+          <p class="text-3xl lg:text-5xl text-white text-balance w-[70%] font-light">
+            La solución ideal para alquilar espacios y monitorear eventos en tiempo real
+          </p>
+          <p class="text-1xl lg:text-2xl text-white text-balance w-[60%] font-light mt-0">
+            Tanto arrendadores como arrendatarios acceden a alertas y herramientas inteligentes para un evento seguro y eficiente.
+          </p>
+        </div>
       </section>
+      
       <section
         id="discover"
         class="w-full py-20 px-5 sm:px-10 lg:px-32 bg-[#D13333]"
@@ -117,7 +118,7 @@
           </h2>
           <p class="text-center text-md sm:text-lg lg:text-xl text-white mb-8">
             Explora una amplia variedad de espacios para eventos, reuniones o
-            momentos especiales. Filtra por ubicación, tamaño, precio, y
+            momentos especiales. Desde nuestra app movil, filtra por ubicación, tamaño, precio, y
             encuentra el lugar perfecto que se adapte a tus necesidades.
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -221,6 +222,7 @@
           </div>
         </div>
       </section>
+
       <section id="publish" class="w-full relative min-h-[60dvh] shadow-lg">
         <div
           class="w-full max-w-7xl mx-auto flex flex-col gap-24 py-20 px-5 sm:px-10 lg:px-32"
@@ -262,9 +264,9 @@
               <img
                 data-aos="fade-left"
                 data-aos-duration="800"
-                src="./assets/publish-phone.png"
+                src="./assets/computer-front.png"
                 alt="Publish"
-                class="h-[50dvh] object-fill rounded-lg"
+                class="h-[60dvh] object-fill rounded-lg"
               />
             </div>
           </div>
@@ -305,6 +307,92 @@
           </div>
         </div>
       </section>
+      <section
+      id="monitoring"
+      class="w-full py-20 px-5 sm:px-10 lg:px-32 bg-[#D13333]"
+    >
+      <div class="max-w-7xl mx-auto">
+        <h2
+          class="text-center text-2xl sm:text-4xl font-bold mb-6 text-white"
+        >
+          MONITOREO INTELIGENTE CON IoT
+        </h2>
+        <p class="text-center text-md sm:text-lg lg:text-xl text-white mb-8">
+          Gracias a sensores IoT, AlquilaFácil permite a los arrendadores detectar humo,
+          ruido, movimiento en zonas restringidas o exceso de aforo. Las notificaciones
+          se envían directamente a la app movil del arrendatario para una respuesta oportuna.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition"
+          >
+            <img
+              src="./assets/sensor-humo.png"
+              alt="Espacio 1"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Sensores de humo
+            </h3>
+            <p class="text-gray-600 mb-4">Detecta presenta de humo en tu local en tiempo real.</p>
+
+          </div>
+          <div
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition"
+        >
+          <img
+            src="./assets/sensor-ruido.jpg"
+            alt="Espacio 1"
+            class="w-full h-40 object-cover rounded-md mb-4"
+          />
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            Sensores de ruido
+          </h3>
+          <p class="text-gray-600 mb-4">Detecta exceso de ruido en todo momento.</p>
+
+        </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition"
+          >
+            <img
+              src="./assets/sensorr-movimiento.jpg"
+              alt="Espacio 2"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Sensores de movimiento en zonas restringidas
+            </h3>
+            <p class="text-gray-600 mb-4">Detecta movimiento en zonas restringidas en tu local en tiempo real.</p>
+
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition"
+          >
+            <img
+              src="./assets/sensor-aforo.jpg"
+              alt="Espacio 3"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Control de aforo
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Controla el aforo de tu local en tiempo real y evita multas por
+              exceso de aforo.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
       <section id="benefits" class="w-full relative">
         <div class="max-w-7xl mx-auto py-20 px-5 sm:px-10 lg:px-32">
           <h2
@@ -323,12 +411,18 @@
               data-aos-duration="800"
               class="bg-white shadow-lg rounded-lg p-6 transition hover:shadow-2xl"
             >
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">
-                Variedad de espacios
+              <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">
+                Variedad de espacios adaptados a cada necesidad
               </h3>
               <p class="text-gray-600 mb-4">
-                Accede a una amplia gama de lugares únicos que se adaptan a
-                cualquier tipo de evento.
+                <strong>Para arrendadores: </strong> Publica cualquier tipo de local, desde auditorios
+                hasta terrazas al aire libre. Amplía tu visibilidad en una plataforma
+                especializada en eventos.
+              </p>
+              <p class="text-gray-600 mb-4">
+                <strong>Para arrendatarios:</strong> Explora espacios únicos para eventos sociales,
+                 reuniones o coworking. Accede a locales filtrados por ubicación,
+                  tipo o capacidad.
               </p>
               <img
                 src="./assets/search.PNG"
@@ -341,12 +435,18 @@
               data-aos-duration="800"
               class="bg-white shadow-lg rounded-lg p-6 transition hover:shadow-2xl"
             >
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">
-                Búsqueda personalizada
+              <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">
+                Gestión rápida y segura desde donde estés
               </h3>
               <p class="text-gray-600 mb-4">
-                Filtra los espacios según ubicación, tamaño y precio para
-                encontrar lo que realmente necesitas.
+                <strong>Para arrendadores:</strong> Administra tus espacios desde la web:
+                 edita precios, disponibilidad, reporta mantenimiento y
+                  visualiza el historial de reservas.
+              </p>
+              <p class="text-gray-600 mb-4">
+                <strong>Para arrendatarios:</strong> Revisa tus reservas pasadas, agrega espacios
+                 a favoritos y consulta el calendario disponible directamente
+                  desde tu app móvil.
               </p>
               <img
                 src="./assets/filters.PNG"
@@ -359,16 +459,21 @@
               data-aos-duration="800"
               class="bg-white shadow-lg rounded-lg p-6 transition hover:shadow-2xl"
             >
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">
-                Comentarios de reservas
+              <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">
+                Seguridad y control en tiempo real con sensores IoT
               </h3>
               <p class="text-gray-600 mb-4">
-                La confianza es clave al reservar un espacio. Aquí podrás leer
-                las experiencias de otros usuarios que han utilizado
-                AlquilaFácil, ayudándote a tomar decisiones informadas.
+                <strong>Para arrendadores:</strong> Recibe alertas si se detecta humo,
+                 exceso de aforo o ruido elevado. Protege tu propiedad sin
+                  necesidad de estar presente.
+              </p>
+              <p class="text-gray-600 mb-4">
+                <strong>Para arrendatarios:</strong> Recibe notificaciones
+                 cuando alguna regla del evento es vulnerada, para poder
+                  actuar antes de que el arrendador intervenga.
               </p>
               <img
-                src="./assets/comments.PNG"
+                src="./assets/monitoreo.jpg"
                 alt="Comentarios"
                 class="h-52 mx-auto"
               />
@@ -378,23 +483,28 @@
               data-aos-duration="800"
               class="bg-white shadow-lg rounded-lg p-6 transition hover:shadow-2xl"
             >
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">
-                Gestión sencilla
+              <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">
+                Comentarios reales que generan confianza
               </h3>
               <p class="text-gray-600 mb-4">
-                Los anfitriones pueden gestionar sus reservas y disponibilidad
-                de manera sencilla desde la aplicación.
+                <strong>Para arrendadores:</strong> Conoce qué piensan los
+                 arrendatarios de tus espacios y mejora tu reputación con cada buena reseña.
+              </p>
+              <p class="text-gray-600 mb-4">
+                <strong>Para arrendatarios:</strong> Consulta las opiniones de otros usuarios
+                 antes de reservar, asegurándote de que el espacio se adapta a tus expectativas.
               </p>
               <img
-                src="./assets/calendar.PNG"
+                src="./assets/comments.PNG"
                 alt="Gestión Sencilla"
                 class="h-52 mx-auto"
+
               />
             </div>
           </div>
         </div>
       </section>
-      <footer class="w-full py-10 px-5 sm:px-10 lg:px-32 bg-[#D13333]">
+      <footer class="w-full py-10 px-5 sm:px-10 lg:px-32 bg-[#969696FF]">
         <div class="max-w-7xl mx-auto text-white">
           <div class="flex flex-col sm:flex-row justify-around mb-8">
             <div>
@@ -403,8 +513,11 @@
                 Email:
                 <a href="mailto:info@alquilafacil.com" class="hover:underline"
                   >info@alquilafacil.com</a
+                  
+                  
                 >
               </p>
+
               <p>
                 Teléfono:
                 <a href="tel:+51991042243" class="hover:underline"
